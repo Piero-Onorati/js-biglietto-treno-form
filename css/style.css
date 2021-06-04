@@ -21,6 +21,7 @@ body{
 }
 
 
+
 /* TEXT */
 h2{
     color: white;
@@ -42,6 +43,13 @@ h4.detail-title{
     font-weight: 900;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 /* SECOND SECTION: TICKET */
 
 .ticket-content{
@@ -51,6 +59,17 @@ h4.detail-title{
     border-bottom: 1px solid black;
 }
 
+/* DEBUG!!!!!!!! */
+
+.input-data{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid red;
+    width: calc(100% / 5);
+    height:100px;
+}
 
 .person-name, .train-ticket-detail{
     border: 3px solid red;
