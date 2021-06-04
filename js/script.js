@@ -2,6 +2,8 @@ var submit = document.getElementById('submit');
 
 submit.addEventListener('click', function(){
 
+    document.getElementById('ticket').className = 'show';
+
     // ---------------  inputs --------------//
 
     var name = document.getElementById('name').value;
@@ -43,3 +45,19 @@ submit.addEventListener('click', function(){
     document.getElementById('price').innerHTML = price + ' &euro;';
 
 })
+
+
+var clean = document.getElementById('clean');
+
+clean.addEventListener('click', function(){
+
+    document.getElementById('ticket').className = 'hidden';
+
+    document.getElementById('name').value = '';
+
+    document.getElementById('km').value = '';
+
+    document.getElementById('age').value = '';
+    
+})
+

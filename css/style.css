@@ -26,6 +26,16 @@ body{
 
 }
 
+/* JAVASCRIPT CLASS */
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
 
 /* TEXT */
 h2{
