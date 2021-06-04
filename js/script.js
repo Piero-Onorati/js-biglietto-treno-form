@@ -8,11 +8,28 @@ submit.addEventListener('click', function(){
 
     var name = document.getElementById('name').value;
 
-    var km = document.getElementById('km').value;
+    var km= document.getElementById('km').value;
 
     var age = document.getElementById('age').value;
-    
 
+    // ------------- validation -------------//
+
+    submitOK = "true";
+
+    if (name == '' ) {
+        alert("Name must be added");
+        submitOK = "false";
+    }
+
+    if (isNaN(km) || km < 1 ) {
+        alert("Km must be added");
+        submitOK = "false";
+    }
+      
+    if (submitOK == "false") {
+        return false;
+    } 
+    
     // --------- elaboration data -----------//
 
     var promotion = 'Nessuna promozione';
@@ -42,7 +59,7 @@ submit.addEventListener('click', function(){
 
     document.getElementById('cpCode').innerHTML = cpCode;
 
-    document.getElementById('price').innerHTML = price + ' &euro;';
+    document.getElementById('price').innerHTML = price.toFixed(2) + ' &euro;';
 
 })
 

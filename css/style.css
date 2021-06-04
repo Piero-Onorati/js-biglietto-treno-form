@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     background-color: #b91450;
     font-family: 'Roboto', sans-serif;
@@ -30,7 +29,6 @@ body{
 
 input:focus, select:focus{
     outline:none;
-
 }
 
 /* JAVASCRIPT CLASS */
