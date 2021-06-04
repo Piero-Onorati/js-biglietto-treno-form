@@ -28,6 +28,10 @@ body{
     padding: 5px 20px;
 }
 
+input:focus, select:focus{
+    outline:none;
+
+}
 
 /* JAVASCRIPT CLASS */
 
@@ -39,8 +43,8 @@ body{
     display: block;
 }
 
-
 /* TEXT */
+
 h2{
     color: white;
     text-transform: uppercase;
@@ -51,16 +55,17 @@ h2{
 
 h3{
     text-transform: uppercase;
-    font-size: 20px;
-
+    font-size: 22px;
+    padding-top: 22px;
 }
 
 h4{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 h4.detail-title{
+    font-size: 22px;
     font-weight: 900;
 }
 
@@ -72,15 +77,21 @@ h4.detail-title{
     margin-top: 20px;
 }
 
+.input-data{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 5);
+}
+
 label{
     color: #c3376a;
     font-weight: 400;
     padding-bottom: 15px;
 }
-input:focus, select:focus{
-    outline:none;
 
-}
+
 input{
     border: 2px solid #c3376a;
     border-radius: 4px;
@@ -107,15 +118,21 @@ button{
     background-color: #cccccc;
     border: 2px solid #898989;
     border-radius: 4px;
-
 }
 
 button:focus{
     border: 2px solid #ab6fac;
 }
 
-
 /* SECOND SECTION: TICKET */
+
+#ticket h2{
+    margin-bottom: 5px;
+}
+
+#ticket .section-content{
+    padding-bottom: 20px;
+}
 
 .ticket-content{
     display: flex;
@@ -124,24 +141,31 @@ button:focus{
     border-bottom: 1px solid black;
 }
 
-
 .ticket-content .person-name{
     width: 25% ;
     background-color: #808080;
+    padding:20px;
+}
+
+.ticket-content .person-name .detail-title{
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+
+.ticket-content .person-name #ticketname{
+    font-weight: bold;
 }
 
 .ticket-content .train-ticket-detail{
     width: calc((100% - 25%) / 4);
+    padding:20px 30px 70px 30px;
 }
 
-
-/* DEBUG!!!!!!!! */
-
-.input-data{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% / 5);
+.ticket-content .train-ticket-detail h4:first-child{
+    height: 50%;
 }
 
+#promotion, #carriage, #cpCode, #price{
+    height: 50%;
+    padding-top: 40px;
+}
