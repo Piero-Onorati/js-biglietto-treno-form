@@ -1,6 +1,59 @@
+/* COMMONS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+body{
+    background-color: #b91450;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-content{
+    background-color: #ffffff;
+    height: 200px;
+}
+
+
+/* TEXT */
+h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3{
+    text-transform: uppercase;
+
+}
+
+h4{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h4.detail-title{
+    font-weight: 900;
+}
+
+/* SECOND SECTION: TICKET */
+
+.ticket-content{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.person-name, .train-ticket-detail{
+    border: 3px solid red;
+    width: calc(100% / 5);
+    height:100px;
+}
