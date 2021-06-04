@@ -24,17 +24,25 @@
                 <div class="row">
                     <div class="input-data">
                         <label for="">Nome e Cognome</label>
-                        <input type="text"></div>
+                        <input id="name" type="text">
+                    </div>
                     <div class="input-data">
                         <label for="">Km da percorrere</label>
-                        <input type="text"></div>
+                        <input id="km" type="text">
+                    </div>
                     <div class="input-data">
                         <label for="">Fascia d'età</label>
-                        <input type="text"></div>
+                        <select name="" id="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
+                    </div>
+
                 </div>
 
                 <div class="row">
-                    <button>Genera</button>
+                    <button id="submit">Genera</button>
                     <button>Annulla</button>
                 </div>
 
@@ -62,31 +70,31 @@
                     <!-- Person name -->
                     <div class="person-name">
                         <h4 class="detail-title">Nome passeggero</h4>
-                        <h4 id="name"></h4>
+                        <h4 id="ticketname"></h4>
                     </div>
 
                     <!-- Promotion applied -->
                     <div class="train-ticket-detail">
                         <h4 class="detail-title">Offerta</h4>
-                        <h4></h4>
+                        <h4 id="promotion"></h4>
                     </div>
 
                     <!-- train carriage number -->
                     <div class="train-ticket-detail">
                         <h4 class="detail-title">Carrozza</h4>
-                        <h4></h4>
+                        <h4 id="carriage" ></h4>
                     </div>
 
                     <!-- CP code -->
                     <div class="train-ticket-detail">
                         <h4 class="detail-title">Codice CP</h4>
-                        <h4 class="detail-title"></h4>
+                        <h4 id="cpCode"></h4>
                     </div>
 
                     <!-- ticket price -->
                     <div class="train-ticket-detail">
                         <h4 class="detail-title">Costo biglietto</h4>
-                        <h4></h4>
+                        <h4 id="price" ></h4>
                     </div>
 
                 </div>
