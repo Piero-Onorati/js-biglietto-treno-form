@@ -7,6 +7,9 @@
     <title>Biglietto Treno</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,17 +24,24 @@
             <!-- start section content -->
             <div class="section-content">
 
+                <!-- start first row -->
                 <div class="row">
+
+                    <!-- Input name -->
                     <div class="input-data">
-                        <label for="">Nome e Cognome</label>
+                        <label for="name">Nome e Cognome</label>
                         <input id="name" type="text">
                     </div>
+
+                    <!-- Input Km -->
                     <div class="input-data">
-                        <label for="">Km da percorrere</label>
+                        <label for="km">Km da percorrere</label>
                         <input id="km" type="text">
                     </div>
+
+                    <!-- Select age -->
                     <div class="input-data">
-                        <label for="">Fascia d'età</label>
+                        <label for="age">Fascia d'età</label>
                         <select name="" id="age">
                             <option value="minorenne">Minorenne</option>
                             <option value="maggiorenne">Maggiorenne</option>
@@ -40,11 +50,14 @@
                     </div>
 
                 </div>
+                <!-- end first row -->
 
+                <!-- start second row: 2 buttons -->
                 <div class="row">
                     <button id="submit">Genera</button>
                     <button id="clean" >Annulla</button>
                 </div>
+                <!-- end second row: 2 buttons -->
 
             </div>
             <!-- end section content -->
@@ -65,7 +78,7 @@
                 <h3>Dettaglio passeggeri</h3>
 
                 <!-- train ticket content -->
-                <div class="row ticket-content">
+                <div class="ticket-content">
 
                     <!-- Person name -->
                     <div class="person-name">
