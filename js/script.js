@@ -14,19 +14,19 @@ submit.addEventListener('click', function(){
 
     // ------------- validation -------------//
 
-    submitOK = "true";
+    var submitOK = true;
 
     if (name == '' ) {
         alert("Name must be added");
-        submitOK = "false";
+        submitOK = false;
     }
 
-    if (isNaN(km) || km < 1 ) {
+    if (isNaN(km) || km < 1 || km == '' ) {
         alert("Km must be added");
-        submitOK = "false";
+        submitOK = false;
     }
       
-    if (submitOK == "false") {
+    if (submitOK == false) {
         return false;
     } 
     
