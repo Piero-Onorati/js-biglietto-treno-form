@@ -19,11 +19,13 @@ submit.addEventListener('click', function(){
     if (name == '' ) {
         alert("Name must be added");
         submitOK = false;
+        document.getElementById('ticket').className = 'hidden';
     }
 
     if (isNaN(km) || km < 1 || km == '' ) {
         alert("Km must be added");
         submitOK = false;
+        document.getElementById('ticket').className = 'hidden';
     }
       
     if (submitOK == false) {
@@ -34,7 +36,7 @@ submit.addEventListener('click', function(){
 
     var promotion = 'Nessuna promozione';
 
-    var price = km * 0.21
+    var price = km * 0.21;
 
     if (age == 'minorenne') {
         price -=  price * 0,2;
